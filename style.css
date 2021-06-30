@@ -187,7 +187,6 @@ h4 {
   margin-right: 5vw;
 }
 
-
 /* About css */
 
 .sec1_content_about {
@@ -212,7 +211,7 @@ h4 {
   margin: 0 auto 5vh auto;
   line-height: 10vw;
   align-items: center;
-  text-align:center;
+  text-align: center;
 }
 
 .info_text_about {
@@ -238,9 +237,9 @@ h4 {
   font-weight: 700;
 }
 
-.sec2_about > h3{
- width: fit-content;
-  margin: 5vw auto; 
+.sec2_about > h3 {
+  width: fit-content;
+  margin: 5vw auto;
 }
 
 .sec2_about > p {
@@ -301,6 +300,17 @@ h4 {
   background: #272a31;
 }
 
+.footer_about > h2 {
+  margin: 3vh auto 1vh auto;
+  color: #e7e7e7;
+  font-size: 1.7rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer_about > hr {
+
+}
+
 .desktop_nav {
   display: none;
 }
@@ -329,13 +339,13 @@ footer {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 10vh;    
+    height: 10vh;
     font-size: 1.2rem;
   }
 
   nav {
     width: fit-content;
-    margin-right: 8vw;    
+    margin-right: 8vw;
   }
 
   a {
@@ -354,7 +364,7 @@ footer {
     display: flex;
     flex-direction: row;
     padding: 0;
-    margin: 0;    
+    margin: 0;
     right: 0;
   }
 
@@ -476,6 +486,13 @@ footer {
     justify-content: center;
   }
 
+  footer > h2 {
+    margin: 3vh auto 1vh auto;
+    color: #e7e7e7;
+    font-size: 1.7rem;
+    font-family: 'Lato', sans-serif;
+  }
+
   .sec3 > h2 {
     font-family: 'Lato', sans-serif;
     font-size: 1.7rem;
@@ -530,21 +547,12 @@ footer {
     background: #272a31;
   }
 
-  footer > h2 {
-    margin: 3vh auto 1vh auto;
-    color: #e7e7e7;
-    font-size: 1.7rem;
-    font-family: 'Lato', sans-serif;
-  };
+  /* About section */
 
-  /*About section*/
-  
   .content_title_about {
     font-size: 5vw;
     width: 50vw;
     line-height: 5vw;
     margin: 0 auto 1vh auto;
   }
- 
-
 }
