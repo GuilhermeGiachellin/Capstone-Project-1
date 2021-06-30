@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 18vw;
-  flex-direction: column;  
+  flex-direction: column;
   background: linear-gradient(to bottom, transparent 0%, #fff 85%), url(./assets/bkg.jpg);
   background-size: cover;
   background-position: center;
@@ -102,12 +102,13 @@ ul {
   font-size: 0.85rem;
 }
 
-button:hover {
+.btn:hover {
   background: #d64a3b;
   color: #272a31;
 }
 
-button {
+.btn {
+  display: block;
   width: 70vw;
   height: 18vw;
   background: #ec5242;
@@ -116,6 +117,10 @@ button {
   border-style: none;
   font-size: 4vw;
   margin: 0 15vw;
+}
+
+.btn_about {
+  display: none;
 }
 
 h4 {
@@ -249,11 +254,11 @@ h4 {
 }
 
 header {
- height: 0;
+  height: 0;
 }
 
 /* Dekstop */
-@media (min-width: 1080px) {
+@media (min-width: 768px) {
   .hamburguer {
     display: none;
   }
@@ -262,9 +267,125 @@ header {
     width: 100%;
     height: 10vh;
     border: 1px solid #272a31;
+    font-size: 1.2rem;
   }
 
   .desktop_nav {
     display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
   }
+
+  .desktop_nav > li {
+    display: inline;
+    padding: 0;
+    margin-left: 2vw;
+  }
+
+  .sec1_content {
+    margin-top: 0;
+  }
+
+  h2 {
+    color: #ec5242;
+    font-family: 'Eczar', serif;
+    font-weight: 500;
+    font-size: 2vw;
+    margin: 20vh 5vw 0 11vw;
+  }
+
+  .content_title {
+    font-size: 5vw;
+    width: 50vw;
+    line-height: 5vw;
+    margin: 0 5vw 1vh 11vw;
+  }
+
+  .info_text {
+    width: 50vw;
+    margin: 0 5vw 5vh 11vw;
+  }
+
+  .evn_time {
+    font-family: 'Eczar', serif;
+    font-weight: 800;
+    font-size: 3vw;
+    color: #272a31;
+    width: 50vw;
+    margin: 0 5vw 10vh 11vw;
+  }
+
+  .sec2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .program_title {
+    font-family: 'Lato', sans-serif;;
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 5vh auto 0 auto;
+  }
+
+  hr {
+    margin-top: 0.5vw;
+  }
+
+  .sec2 > ul {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin: 10vh 10vw;
+    padding: 0;
+  }
+
+  .program {
+    width: 15vw;
+    height: 18vw;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 1vw;
+  }
+
+  .program > img {
+    width: 5vw;
+  }
+
+  .btn_about {
+    display: block;  
+    width: fit-content;
+    text-decoration: underline;
+    height: 4vh;
+    justify-content: center;
+    color: #fff;
+    background: none;
+    border-style: none;
+    font-size: 1.5rem;
+    margin: 5vh auto 20vh auto;
+  }
+
+  .btn_about:hover {
+    color: #ec5242;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .program > p {
+    color: #fff;
+    width: 8vw;
+    height: ;
+    font-size: 0.85rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    margin: 0;
+  }  
 }
