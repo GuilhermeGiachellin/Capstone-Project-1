@@ -257,6 +257,14 @@ header {
   height: 0;
 }
 
+.logo {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
 /* Dekstop */
 @media (min-width: 768px) {
   .hamburguer {
@@ -264,17 +272,39 @@ header {
   }
 
   header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     height: 10vh;
     border: 1px solid #272a31;
     font-size: 1.2rem;
   }
 
+  nav {
+    width: fit-content;
+    margin-right: 8vw;    
+  }
+
+  a {
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  .logo {
+    display: block;
+    width: fit-content;
+    margin: 0;
+    margin-left: 8vw;
+  }
+
   .desktop_nav {
     display: flex;
     flex-direction: row;
     padding: 0;
-    margin: 0;
+    margin: 0;    
+    right: 0;
   }
 
   .desktop_nav > li {
@@ -322,9 +352,9 @@ header {
   }
 
   .program_title {
-    font-family: 'Lato', sans-serif;;
+    font-family: 'Lato', sans-serif;
     color: #fff;
-    font-size: 2vw;
+    font-size: 1.7rem;
     font-weight: 500;
     align-items: center;
     justify-content: center;
@@ -334,30 +364,33 @@ header {
 
   hr {
     margin-top: 0.5vw;
+    width: 3%;
   }
 
   .sec2 > ul {
     display: flex;
     flex-direction: row;
     width: 80vw;
-    margin: 10vh 10vw;
+    margin: 10vh 10.5vw;
     padding: 0;
+    justify-content: center;
   }
 
   .program {
-    width: 15vw;
+    width: 14vw;
     height: 18vw;
     display: flex;
     flex-direction: column;
-    margin: 20px 1vw;
+    margin: 20px 0.2vw;
+    justify-content: center;
   }
 
   .program > img {
-    width: 5vw;
+    width: 4vw;
   }
 
   .btn_about {
-    display: block;  
+    display: block;
     width: fit-content;
     text-decoration: underline;
     height: 4vh;
@@ -379,13 +412,69 @@ header {
 
   .program > p {
     color: #fff;
-    width: 8vw;
-    height: ;
-    font-size: 0.85rem;
+    width: 9vw;
+    font-size: 0.8vw;
   }
 
   h4 {
     font-size: 1.5rem;
+    margin: 1vw 0;
+  }
+
+  .sec3 {
+    justify-content: center;
+  }
+
+  .sec3 > h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .speakers {
+    width: 30vw;
+    margin: 5vh 0;
+  }
+
+  .speaker_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80vw;
+    justify-content: center;
+  }
+
+  .img_speaker {
+    width: 10vw;
+    height: 10vw;
     margin: 0;
-  }  
+  }
+
+  .speaker_info > hr {
+    margin: 0.6vw 1vw;
+  }
+
+  .speaker_info > h4 {
+    font-size: 2.2rem;
+    margin: 0 1vw 0 1vw;
+  }
+
+  .speaker_title {
+    font-size: 1.4rem;
+    margin: 5px 1vw 0 1vw;
+  }
+
+  .speaker_info p {
+    font-size: 0.9rem;
+    margin: 5px 1vw 0 1vw;
+    width: 15vw;
+  }
+
+  footer {
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+    background: #272a31;
+  }
 }
