@@ -9,6 +9,11 @@ hr {
   margin-bottom: 10vh;
 }
 
+footer > hr {
+  width: 10%;
+  margin: 1vh auto 1vh auto;
+}
+
 body {
   width: 100vw;
   height: 100%;
@@ -376,7 +381,7 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  margin: auto;
+  margin: 0 auto;
   width: 90vw;
 }
 
