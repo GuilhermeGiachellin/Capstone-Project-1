@@ -19,11 +19,10 @@ const speakerInfo = [{
     title: 'Son of Zeus',
     description: 'Killer of Medusa and used her head to save Argos',    
   }];
-  const workSec = document.getElementById('sec3');
-  const mainUl = document.createElement('ul');  
-  workSec.appendChild(mainUl);
   
+  const mainUl = document.getElementById('speaker_ul'); 
   function create(obj) { return document.createElement(obj); }  
+
   function constructor(obj) {
     for (let i = 0; i < obj.length; i += 1) {
       if (obj[i].length === 2) {
@@ -67,23 +66,15 @@ const speakerInfo = [{
   const linksArray = [];
   for (let i = 0; i < workInfo.length; i += 1) {
     // create o que eu preciso aqui
-    const
-    const worksBox = create('li');
-    const imgWrk = create('img');
-    const contentDiv = create('div');
-    const wrkTitle = create('h1');
-    const featureUl = create('ul');
-    const featureLi1 = create('li');
-    const featureLi2 = create('li');
-    const imgDot1 = create('img');
-    const featureLi3 = create('li');
-    const infoText = create('p');
-    const languagesUl = create('ul');
-    const languagesLi1 = create('li');
-    const languagesLi2 = create('li');
-    const languagesLi3 = create('li');
-    const btnH2 = create('h2');
-    const btnA = create('a');
+    const speakerLi = create('li');
+    const speakerImgCnt = create('div');
+    const speakerImg = create('img');
+    const speakerInfoCnt = create('div');
+    const speakerName = create('h4');
+    const speakerTitle = create('p');
+    const speakerLine = create('hr');
+    const speakerQual = create('p');
+    
     linksArray.push([mainUl, worksBox]);
     linksArray.push([worksBox, imgWrk, 'desktop_img']);
     linksArray.push([worksBox, contentDiv]);
