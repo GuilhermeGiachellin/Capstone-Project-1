@@ -29,6 +29,9 @@ You can see my page live here:
 Contributions, issues, and feature requests are welcome!
 
 <!--Feel free to check the [issues page](../../issues/).-->
+## Credits
+
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07)
 
 ## Show your support
 
