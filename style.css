@@ -752,6 +752,12 @@ header {
     margin-top: 2vh;
   }
 
+  .sec3_about > h1 {
+    width: fit-content;
+    margin: 10vh auto 0 auto;
+    font-size: 2vw;
+  }
+
   .sec3_about > hr {
     margin-top: 2vh;
   }
