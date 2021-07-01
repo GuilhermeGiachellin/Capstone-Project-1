@@ -139,6 +139,13 @@ h4 {
   font-size: 4vw;
 }
 
+footer > h2 {
+  margin: 3vh auto 1vh auto;
+  color: #e7e7e7;
+  font-size: 4vw;
+  font-family: 'Lato', sans-serif;
+}
+
 .sec3 > h2 {
   color: #272a31;
   font-size: 5vw;
@@ -346,21 +353,10 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   width: 100vw;
   height: 30vh;
   background: #272a31;
-}
-
-footer > h2 {
-  margin: 3vh auto 1vh auto;
-  color: #e7e7e7;
-  font-size: 4vw;
-  font-family: 'Lato', sans-serif;
-}
-
-footer > hr {
-  width: 10%;
-  margin: 1vh auto 1vh auto;
 }
 
 .desktop_nav {
@@ -481,7 +477,11 @@ header {
     margin-left: 2vw;
   }
 
-  .desktop_nav > li > a{
+  .about_info > a {
+    font-size: 0.9vw;
+  }
+
+  .desktop_nav > li > a {
     color: #272a31;
     text-decoration: none;
   }
@@ -602,7 +602,7 @@ header {
   footer > h2 {
     margin: 3vh auto 1vh auto;
     color: #e7e7e7;
-    font-size: 1.7rem;
+    font-size: 1vw;
     font-family: 'Lato', sans-serif;
   }
 
@@ -632,6 +632,11 @@ header {
     margin: 0;
   }
 
+  footer > hr {
+    width: 10%;
+    margin: 1vh auto 1vh auto;
+  }
+
   .speaker_info > hr {
     margin: 0.6vw 1vw;
   }
@@ -650,14 +655,6 @@ header {
     font-size: 0.9rem;
     margin: 5px 1vw 0 1vw;
     width: 15vw;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 30vh;
-    background: #272a31;
   }
 
   /* About section */
@@ -711,10 +708,6 @@ header {
 
   .about_info {
     font-size: 0.8vw;
-  }
-
-  .about_info > a {
-    font-size: 0.9vw;
   }
 
   .sec2_about {
@@ -773,18 +766,6 @@ header {
     flex-wrap: wrap;
     width: 100vw;
     background: #272a31;
-  }
-
-  footer > h2 {
-    margin: 3vh auto 1vh auto;
-    color: #e7e7e7;
-    font-size: 1vw;
-    font-family: 'Lato', sans-serif;
-  }
-
-  footer > hr {
-    width: 10%;
-    margin: 1vh auto 1vh auto;
   }
 
   .partners_cnt {
