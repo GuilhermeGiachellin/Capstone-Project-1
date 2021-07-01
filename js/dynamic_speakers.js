@@ -1,20 +1,20 @@
 const speakerInfo = [{
-    imagePath: './assets/SnapshootPortfolio.png',
+    imagePath: './assets/theseus.jpg',
     name: 'Theseus',
     title: 'Son of Zeus',
     description: 'Hero of Athens, killed the Minotaur',   
   }, {
-    imagePath: './assets/SnapshootPortfolio2.png',
+    imagePath: './assets/gilgamesh.jpg',
     name: 'Gilgamesh',    
     title: 'King of Uruk',
     description: 'Once a tyrant, traveled to the underworld to see Enkidu again',    
   }, {
-    imagePath: './assets/SnapshootPortfolio3.png',
+    imagePath: './assets/hercules.jpg',
     name: 'Hercules',    
     title: 'Son of Zeus',
     description: 'Completed the 12 jobs became king, was tricked by Hera',   
   }, {
-    imagePath: './assets/SnapshootPortfolio4.png',
+    imagePath: './assets/perseus.jpg',
     name: 'Perseus',    
     title: 'Son of Zeus',
     description: 'Killer of Medusa and used her head to save Argos',    
@@ -64,8 +64,8 @@ const speakerInfo = [{
     }
   }
   const linksArray = [];
-  for (let i = 0; i < workInfo.length; i += 1) {
-    // create o que eu preciso aqui
+  for (let i = 0; i < speakerInfo.length; i += 1) {
+    // Creating the speaker list
     const speakerLi = create('li');
     const speakerImgCnt = create('div');
     const speakerImg = create('img');
@@ -75,25 +75,16 @@ const speakerInfo = [{
     const speakerLine = create('hr');
     const speakerQual = create('p');
     
-    linksArray.push([mainUl, worksBox]);
-    linksArray.push([worksBox, imgWrk, 'desktop_img']);
-    linksArray.push([worksBox, contentDiv]);
-    linksArray.push([contentDiv, wrkTitle, 'worksh1', workInfo[i].title]);
-    linksArray.push([contentDiv, featureUl]);
-    linksArray.push([featureUl, featureLi1, null, workInfo[i].features[0]]);
-    linksArray.push([featureLi2, imgDot1]);
-    linksArray.push([featureUl, featureLi2, 'qualifications', workInfo[i].features[1]]);
-    linksArray.push([featureLi3, imgDot1]);
-    linksArray.push([featureUl, featureLi3, 'qualifications', workInfo[i].features[2]]);
-    linksArray.push([contentDiv, infoText, 'p', workInfo[i].description]);
-    linksArray.push([contentDiv, languagesUl, 'languages']);
-    linksArray.push([languagesUl, languagesLi1, null, workInfo[i].lenguages[0]]);
-    linksArray.push([languagesUl, languagesLi2, null, workInfo[i].lenguages[1]]);
-    linksArray.push([languagesUl, languagesLi3, null, workInfo[i].lenguages[2]]);
-    linksArray.push([contentDiv, btnH2]);
-    linksArray.push([btnH2, btnA, 'works_btn', 'See Project']);
-    imgWrk.src = workInfo[i].imagePath;
-    imgWrk.alt = 'preview work';     
+    linksArray.push([mainUl, speakerLi, 'speakers']);
+    linksArray.push([speakerLi, speakerImgCnt]);
+    linksArray.push([speakerImgCnt, speakerImg, 'img_speaker']);
+    linksArray.push([speakerLi, speakerInfoCnt, 'speaker_info']);
+    linksArray.push([speakerInfoCnt, speakerName, null, speakerInfo[i].name]);
+    linksArray.push([speakerInfoCnt, speakerTitle, 'speaker_title', speakerInfo[i].title]);
+    linksArray.push([speakerInfoCnt, speakerLine]);
+    linksArray.push([speakerInfoCnt, speakerQual, null, speakerInfo[i].description]);    
+    speakerImg.src = speakerInfo[i].imagePath;
+    speakerImg.alt = 'speaker';     
   }
   constructor(linksArray);
   

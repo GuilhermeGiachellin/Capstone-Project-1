@@ -78,7 +78,7 @@ ul {
   background: url(./assets/fret.png);
   background-repeat: repeat;
   background-color: #272a31;
-  padding: 3vw 0; 
+  padding: 3vw 0;
 }
 
 .program_title {
@@ -99,7 +99,7 @@ ul {
   background: rgba(211, 211, 211, 0.5);
   margin: 20px 5vw;
   flex-direction: row;
-  align-items: center;  
+  align-items: center;
 }
 
 .program > img {
@@ -342,7 +342,7 @@ h4 {
   font-weight: 800;
 }
 
-.footer_about {
+footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -351,14 +351,14 @@ h4 {
   background: #272a31;
 }
 
-.footer_about > h2 {
+footer > h2 {
   margin: 3vh auto 1vh auto;
   color: #e7e7e7;
   font-size: 4vw;
   font-family: 'Lato', sans-serif;
 }
 
-.footer_about > hr {
+footer > hr {
   width: 10%;
   margin: 1vh auto 1vh auto;
 }
@@ -375,8 +375,17 @@ header {
   display: none;
 }
 
-footer {
-  display: none;
+.partners_cnt {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 90vw;
+}
+
+.partners_cnt > img {
+  width: 30vw;
 }
 
 /* MENU MOBILE */
@@ -472,9 +481,9 @@ footer {
     margin-left: 2vw;
   }
 
-  .desktop_nav > li > {
+  .desktop_nav > li > a{
     color: #272a31;
-    text-decoration: none;    
+    text-decoration: none;
   }
 
   .sec1_content {
@@ -695,7 +704,7 @@ footer {
     border: 1px solid #b3b3b3;
     width: 50vw;
     margin: 3vh auto;
-    font-size: 0.9vw;
+    font-size: 1.2vw;
     text-align: center;
     padding: 0 2vw;
   }
@@ -716,6 +725,7 @@ footer {
     max-width: 50vw;
     margin: 0 auto;
     text-align: center;
+    font-size: 1.2vw;
   }
 
   .sec2_about > h1 {
@@ -744,5 +754,43 @@ footer {
 
   .sec3_about > hr {
     margin-top: 2vh;
+  }
+
+  .sec3_about > p {
+    margin: auto;
+    font-size: 1.2vw;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    background: #272a31;
+  }
+
+  footer > h2 {
+    margin: 3vh auto 1vh auto;
+    color: #e7e7e7;
+    font-size: 1vw;
+    font-family: 'Lato', sans-serif;
+  }
+
+  footer > hr {
+    width: 10%;
+    margin: 1vh auto 1vh auto;
+  }
+
+  .partners_cnt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 90vw;
+  }
+
+  .partners_cnt > img {
+    width: 10vw;
   }
 }
