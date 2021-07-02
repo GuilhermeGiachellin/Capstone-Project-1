@@ -28,8 +28,8 @@ You can see my page live here:
 
 ## Video
 
-- [Video](https://www.loom.com/share/b9ab8b9e770a4a38809f79e4f2852a5b)
-
+- [Video](https://www.youtube.com/watch?v=YMEuy0G5n34&ab_channel=CharlesDark)
+<!--https://www.loom.com/share/b9ab8b9e770a4a38809f79e4f2852a5b-->
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
