@@ -2,9 +2,12 @@
 
 # Capstone project for Module 1
 
-> project description...
+> Created a website with two pages based on a design provided by Cindy Shin, but the subject was chosen by me.
 
-![screenshot]()
+![screenshot](![image](https://user-images.githubusercontent.com/81584449/124217306-8423f800-dace-11eb-851d-a70377e2802c.png)
+![image](https://user-images.githubusercontent.com/81584449/124217368-9b62e580-dace-11eb-9829-721cd348ff0d.png)
+![image](https://user-images.githubusercontent.com/81584449/124217395-a584e400-dace-11eb-9b4e-f6b400396b98.png)
+)
 
 
 ## Built With
