@@ -26,6 +26,9 @@ You can see my page live here:
 
 - GitHub: [@GuilhermeGiachellin](https://github.com/GuilhermeGiachellin)
 
+## Video
+
+- [Video](https://www.loom.com/share/b9ab8b9e770a4a38809f79e4f2852a5b)
 
 ## 🤝 Contributing
 
