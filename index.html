@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,21 +14,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Symposium of Gods and Heroes</title>
 </head>
+
 <body>
     <header>
-        <img src="./assets/greekhamburguer.png" alt="hamburguer" id="hamburguer" class="hamburguer">
-        <a href="./index.html"><img src="./assets/Illustration.png" alt="Logo" class="logo"></a>
-        <nav>
-            <ul class="desktop_nav">
-                <li><a href="./index.html">Join</a></li>
-                <li><a href="./pages/about.html">About</a></li>
-                <li><a href="./index.html">Program</a></li>
+        <div class="social_media">
+            <ul >
+                <li>Log in</li>
+                <li>My page</li>
             </ul>
-        </nav>
+        </div>
+        <div class="main_header">
+            <img src="./assets/greekhamburguer.png" alt="hamburguer" id="hamburguer" class="hamburguer">
+            <a href="./index.html"><img src="./assets/Illustration.png" alt="Logo" class="logo"></a>
+            <nav>
+                <ul class="desktop_nav">
+                    <li><a href="./index.html">Join</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./index.html">Program</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section class="display_menu" id="display_menu">
         <img src="./assets/X.png" alt="X" id="chm_btn" class="chm_btn">
-        <ul id="display_ul" class="display_ul">            
+        <ul id="display_ul" class="display_ul">
             <li><a href="./index.html" id="join">Join</a></li>
             <li><a href="./pages/about.html" id="about">About</a></li>
             <li><a href="./index.html" id="ds_cnt">Program</a></li>
@@ -82,15 +92,20 @@
         <h2>Featured Speakers</h2>
         <hr>
         <ul class="speaker_list" id="speaker_ul">
-            
+
         </ul>
-    </section>    
+    </section>
     <footer>
+        
         <h2>Partners</h2>
         <hr>
         <div class="partners_cnt">
-            <img src="./assets/youtube.png" alt="youtube">            
+            <img src="./assets/youtube.png" alt="youtube">
             <img src="./assets/google.png" alt="google">
+        </div>
+        <div class="footer_rights">
+            <img src="./assets/Illustration.png" alt="logo" class="img_footer">
+            <p>650BC Symposium. Some rights reserved</p>
         </div>
     </footer>
     <script type="text/javascript" src="./js/dynamic_speakers.js"></script>

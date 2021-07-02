@@ -18,6 +18,16 @@ const speakerInfo = [{
   name: 'Perseus',
   title: 'Son of Zeus',
   description: 'Killer of Medusa and used her head to save Argos',
+}, {
+  imagePath: './assets/athena.jpg',
+  name: 'Athena',
+  title: 'God of Wisdom',
+  description: 'Once a tyrant, traveled to the underworld to see Enkidu again',
+}, {
+  imagePath: './assets/zeus.jpg',
+  name: 'Zeus',
+  title: 'God of Gods',
+  description: 'Completed the 12 jobs became king, was tricked by Hera',
 }];
 
 const mainUl = document.getElementById('speaker_ul');
